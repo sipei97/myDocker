@@ -1,8 +1,18 @@
-基于 php:fpm
+基于 mysql:5.7
 
-## 添加 pdo_mysql 扩展并开启
+## 初次运行时报错
 
-docker-php-ext-install pdo_mysql && docker-php-ext-enable pdo_mysql
+先重启容器试试
+
+## 不能正常访问时，允许远程访问
+
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY '123456';
+
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456';
+
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'127.0.0.1' IDENTIFIED BY '123456';
+
+FLUSH PRIVILEGES;
 
 ## 更新 apt-get 源到国内
 
