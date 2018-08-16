@@ -6,10 +6,6 @@ sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 
 apt-get update && apt-get clean
 
-## 安装程序
-
-apt-get install -y php-pear php-dev
-
 ## 添加扩展并开启
 
 docker-php-ext-install pdo_mysql
