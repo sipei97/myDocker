@@ -1,6 +1,6 @@
 FROM php:fpm
 RUN sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list \
-    && apt update && apt clean && apt install -y \
+    && apt-get update && apt-get clean && apt-get install -y \
         php-pear \
         php-dev \
     && pecl install xdebug \

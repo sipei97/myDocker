@@ -1,14 +1,14 @@
 基于 php:fpm
 
-## 更新 apt 源到国内
+## 更新 apt-get 源到国内
 
 sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 
 ## 安装程序
 
-apt update && apt clean
+apt-get update && apt-get clean
 
-apt install -y php-pear php-dev
+apt-get install -y php-pear php-dev
 
 ## 添加扩展并开启
 
