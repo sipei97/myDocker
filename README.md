@@ -4,9 +4,9 @@
 
 sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 
-## 安装程序
-
 apt-get update && apt-get clean
+
+## 安装程序
 
 apt-get install -y php-pear php-dev
 
