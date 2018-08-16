@@ -2,6 +2,6 @@
 
 ## 更新 apt-get 源到国内
 
-cp sources.list sources.list.bak
+sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 
-新 sources.list 使用的 163 源
+apt-get update && apt-get clean
