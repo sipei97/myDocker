@@ -7,6 +7,7 @@
 * 基于 php:fpm
 * 基于 mysql:5.7
 * 基于 nginx:latest
+* 基于 redis:latest
 
 ## 使用
 
